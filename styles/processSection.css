@@ -1,0 +1,33 @@
+/* CSS Original (mantenha este bloco) */
+.processos {
+    padding: 50px 0 0 0;
+}
+
+.processos .imagem img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.processos ul li {
+    list-style: none;
+    font-size: 18px;
+    color: #797979;
+    line-height: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 0 12px;
+}
+
+.processos ul li .lista_processos {
+    width: 60px;
+    border-radius: 20px;
+}
+
+.processos ul li strong {
+    color: #000;
+}
+
+

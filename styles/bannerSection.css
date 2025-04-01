@@ -1,0 +1,28 @@
+.banner {
+    padding: 50px 0 0 0;
+    padding-bottom: 40px ;
+    height: fit-content;
+    background-color: rgba(196, 196, 196, 0.2941176471);
+}
+
+.banner .sec_titulo {
+    line-height: 44px;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.banner .sec_subtitulo {
+    line-height: 40px;
+}
+
+.banner .row .linha {
+    content: "";
+    position: absolute;
+    left: 40%;
+    width: 5px;
+    height:30%;
+    border-radius: 50px;
+    background-color: rgba(196, 196, 196, 0.314);
+    margin-left: 20px;
+}
+

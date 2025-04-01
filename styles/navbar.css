@@ -1,0 +1,117 @@
+.navbar {
+    padding: 0 !important;
+    margin: 0;
+    background-color: #fff !important;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    height: auto;
+}
+
+.navbar_principal {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 20px; /* Diminui o espaço entre logo e menu */
+}
+
+nav .container ul li a{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center !important;
+    text-decoration: none;
+
+}
+
+.navbar-nome {
+    color: #0a0a0a;
+    padding: 0px 0px 0px 15px !important;
+    position: relative;
+}
+
+nav .container .navbar_principal {
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+}
+
+nav .container .navbar_principal span {
+    color: #ffe600;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nome {
+    color: #0a0a0a;
+    padding: 0px 0px 0px 15px !important;
+    position: relative; /* Certifique-se de ter isso */
+}
+
+nav .container ul li a::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 157%;
+    width: 0%;
+    height: 1px;
+    background-color: #6854fc;
+    transition: all 0.8s cubic-bezier(0.67, 0.17, 0, 1.63);
+}
+
+nav .container ul li a:hover::before {
+    width: 75%;
+}
+
+.dropdown-toggle::after {
+    content: none !important; /* Remove o conteúdo (a seta) */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostra o dropdown quando o item pai (.dropdown) é hover */
+}
+
+/* Estilos adicionais para o item dropdown (li) podem ser necessários */
+.dropdown {
+    position: relative; /* Importante para o posicionamento absoluto do dropdown-menu */
+}
+
+.btn {
+    background-color: #6854fc !important;
+    border: 1px solid #6854fc !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    padding: 6px 12px;
+    font-weight: 600 !important;
+}
+
+
+
+.btn:hover {
+    background-color: #fff !important;
+    color: #6854fc !important;
+    border: 1px solid #6854fc !important;
+}
+
+#navbarNavegacao {
+    display: flex;
+    align-items: center;
+}
+
+#navbar_icon {
+    padding: 0 0 0 16px !important;
+}
+
+.fa-solid {
+    font-weight: 900 !important;
+}
+
+nav .container i {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

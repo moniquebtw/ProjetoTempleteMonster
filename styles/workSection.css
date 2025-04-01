@@ -1,0 +1,36 @@
+/* CSS Original (mantenha este bloco) */
+.works {
+    padding: 50px 0 0 0;
+}
+
+#see_our_work {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.novoItem {
+    overflow: hidden;
+    width: 350px !important;
+    height: 360px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.novoItem img {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.novoItem img:hover {
+    transform: rotate(4deg) scale(1.3);
+}
+
+.botao_see_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}

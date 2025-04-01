@@ -1,0 +1,64 @@
+.clientes {
+    background-color: #fff;
+    padding: 50px 0 0;
+    padding-bottom: 50px;
+}
+
+.clientes .texto_do_carrossel {
+    font-size: 18px;
+    color: #797979;
+    list-style: 30px;
+}
+
+.clientes .perfil {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.swiper-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -50px;
+}
+
+.swiper-button .btn {
+    background-color: #efefef !important;
+    border: none !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer; /* Garante que o botão fique clicável */
+    transition: background-color 0.3s ease; /* Adiciona efeito suave no hover */
+}
+
+.swiper .btn:hover {
+    border: #000 solid 1px !important;
+}
+
+.swiper .fa-solid {
+    color: black !important;
+    font-size: 18px;
+}
+
+.perfil-foto {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.clientes #estrelas {
+    color: #facc07;
+    font-size: 16px;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.text-dark {
+    margin-left: 10px;
+}

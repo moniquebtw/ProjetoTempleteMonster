@@ -5,15 +5,16 @@ const companhias = ['company-1.jpg', 'company-2.jpg', 'company-3.jpg', 'company-
 const nossoTrabalho = ['blog_1.jpg', 'blog_2.jpg', 'blog_3.jpg'];
 
 const variosIconesServices = document.querySelector('.card')
-const variasCompanhias = document.querySelector('.companies_list')
-const conhecaNossoTrabalho = document.getElementById('conhecaNossoTrabalho')
+const variasCompanhias = document.querySelector('.empresas_lista')
+const conhecaNossoTrabalho = document.getElementById('see_our_work')
 const estrelas = document.getElementById('estrelas')
+
 
 for (let i = 0; i < 4; i++) {
     const novoCard = document.createElement('div');
     novoCard.className = ('novoCard');
     novoCard.innerHTML = `
-        <img src="/assets/${iconesServices[i]}" alt="${titulosDosIconesServices[i]}">
+        <img class="iconesServices" src="/assets/${iconesServices[i]}" alt="${titulosDosIconesServices[i]}">
         <h5>${titulosDosIconesServices[i]}</h5>
         <p>${textoDosIconesServices[i]}</p>
     `;
@@ -51,4 +52,8 @@ for (let i = 0; i < 5; i++) {
 
     estrelas.appendChild(novaEstrela);
 }
+
+
+
+
 

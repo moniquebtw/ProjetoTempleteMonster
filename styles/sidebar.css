@@ -1,0 +1,185 @@
+/* CSS Original (mantenha este bloco) */
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0 100px 10px rgba(148, 148, 148, 0.2745098039);
+    padding: 4rem 25px;
+    transition: all 2s cubic-bezier(0.42, 0, 0.16, 1.01);
+    overflow-y: scroll;
+}
+
+.sidebar .close_icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px 20px rgba(205, 205, 205, 0.1529411765);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar .close_icon i {
+    transition: all 0.3s linear;
+    color: #000;
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    list-style: none;
+    line-height: 3.2rem;
+
+}
+
+.sidebar ul li a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: rgba(104, 84, 252);
+    letter-spacing: 2px;
+}
+
+.sidebar .dropdown-nome {
+    position: relative !important;
+}
+
+.sidebar .redes_sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sidebar .redes_sociais .icone_rede_social i {
+    font-size: 25px;
+    color: #6854fc;
+    transition: all 0.3s linear;
+}
+
+.sidebar .redes_sociais .icone_rede_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(104, 84, 252, 0.3019607843);
+    box-shadow: 0 0 10px #cdcdcd;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+.sidebar .redes_sociais .icone_rede_social:hover {
+    background-color: #6854fc;
+    box-shadow: 0 0 10px #6854fc;
+}
+
+.sidebar .redes_sociais .icone_rede_social:hover i {
+    color: #fff;
+}
+
+.bar_icon .close-icon {
+    display: none;
+    cursor: pointer; /* Adiciona cursor para indicar que é clicável */
+}
+
+.overlay-background.active {
+    left: 0;
+}
+
+.overlay-background {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 97, 151, 0.7882352941);
+    transition: all 0.8s ease-out;
+}
+
+/* CSS Responsivo (adicionar abaixo do original) */
+
+/* Para telas menores que 1200px */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 45%; /* Aumenta um pouco a largura em telas menores */
+    }
+}
+
+/* Para telas menores que 1000px */
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 60%; /* Aumenta mais a largura */
+    }
+}
+
+/* Para telas menores que 800px */
+@media (max-width: 800px) {
+    .sidebar {
+        width: 75%; /* Aumenta ainda mais */
+    }
+}
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 90%; /* Quase tela cheia em smartphones */
+        padding: 3rem 15px; /* Reduz o padding */
+    }
+
+    .sidebar ul li a {
+        font-size: 24px; /* Reduz a fonte dos links */
+    }
+
+    .sidebar .redes_sociais .icone_rede_social {
+        width: 50px; /* Reduz o tamanho dos ícones sociais */
+        height: 50px;
+    }
+
+    .sidebar .redes_sociais .icone_rede_social i {
+        font-size: 20px; /* Reduz a fonte dos ícones sociais */
+    }
+}
+
+/* Para telas menores que 400px */
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%; /* Tela cheia em smartphones muito pequenos */
+        padding: 2rem 10px; /* Reduz ainda mais o padding */
+    }
+
+    .sidebar ul li a {
+        font-size: 20px; /* Reduz ainda mais a fonte dos links */
+    }
+
+    .sidebar .close_icon {
+        width: 40px; /* Reduz o tamanho do ícone de fechar */
+        height: 40px;
+        right: 10px;
+        top: 5px;
+    }
+
+    .sidebar .close_icon i {
+        font-size: 16px;
+    }
+}
