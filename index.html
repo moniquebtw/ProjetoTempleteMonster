@@ -4,524 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <!-- estilos -->
-        <link rel="stylesheet" href="/styles/style.css">
-        <link rel="stylesheet" href="/styles/reset.css">
-        <link rel="stylesheet" href="/styles/navbar.css">
-        <link rel="stylesheet" href="/styles/sidebar.css">
-        <link rel="stylesheet" href="/styles/iconesFlutuando.css">
-        <link rel="stylesheet" href="/styles/heroSection.css">
-        <link rel="stylesheet" href="/styles/servicesSection.css">
-        <link rel="stylesheet" href="/styles/companiesSection.css">
-        <link rel="stylesheet" href="/styles/processSection.css">
-        <link rel="stylesheet" href="/styles/workSection.css">
-        <link rel="stylesheet" href="/styles/bannerSection.css">
-        <link rel="stylesheet" href="/styles/aboutSection.css">
-        <link rel="stylesheet" href="/styles/clientsSection.css">
-        <link rel="stylesheet" href="/styles/accordion.css">
-        <link rel="stylesheet" href="/styles/footer.css">
-    </head>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
 
 <body>
 
-    <div class="preloader"> 
-        <span class="loader">
-        </span>
-        <span class="loader_sombra"></span>
-</div>
+    <!-- Preloader -->
+    <div id="preloader-container"></div>
 
-    <header>
-                <!-- Navbar Principal -->
-        <nav class="navbar navbar-expand-lg navbar bg-light m-0">
-            <div class="container">
-                <div class="navbar_principal">
-                <strong>
-                    <span>Ace</span>Studio
-                </strong>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavegacao" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavegacao">
-                    <ul class="navbar-nav mx-auto mr-auto">
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="index.html">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="about.html">About Us</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="service.html">Services</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="blog.html">Blog</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-nome" href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="navbar-item dropdown">
-                            <a class="navbar-nome dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Other Pages
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-nome" href="#">Single Blog</a>
-                                <a class="dropdown-nome" href="#">404</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="d-flex align-items-center gap-10 ml-auto">
-                        <button class="btn botao_navbar">connect with us</button>
+    <!-- Cabeçalho -->
+    <header id="main-header-container"></header>
 
-                        <div class="navbar_icon pl3" id="navbar_icon">
-                            <i class="fa-solid fa-bars-staggered fa-lg open-icon"></i>
-                            <i class="fa-solid fa-xmark fa-lg close-icon" style="display: none;"></i>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </nav>
-    </header>  
+    <!-- Sidebar -->
+    <aside id="sidebar-container"></aside>
 
-            <!-- Sidebar -->
-
-    <aside class="sidebar">
-        <div class="close_icon">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-
-        <ul class="mb-3">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-
-            <li class="navbar-item dropdown">
-                <a class="navbar-nome dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                Other Pages
-                </a>
-                <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-nome">Single Blog</a></li>
-                <li><a href="#" class="dropdown-nome">404</a></li>
-            </ul>
-            </li>
-        </ul>
-
-        
-        <h5 class="mb4"> Follow us on </h5>
-        <div class="redes_sociais">
-            <a href="#" class="icone_rede_social"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="icone_rede_social"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icone_rede_social"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="icone_rede_social"><i class="fa-brands fa-discord"></i></a>
-        </div>
-    </aside>
-
-        <!-- Animação transição azul -->
-    <div class="overlay-background" id="overlay"></div>
-
+    <!-- Conteúdo principal -->
     <main>
 
-            <!-- Hero icones flutuando-->
-    <section class="hero mb-4 pb-4 icones_flutuando">
-        <img class="position-absolute icon-1" src="assets/plus_ellipse.jpg" alt="">
-        <img class="position-absolute icon-2" src="assets/plus_ellipse.jpg" alt="">
-        <img class="position-absolute icon-3" src="assets/circle_ellipse.jpg" alt="">
-        <img class="position-absolute icon-4" src="assets/circle_ellipse.jpg" alt="">
-        <img class="position-absolute icon-5" src="assets/circle_ellipse.jpg" alt="">
-        <img class="position-absolute icon-6" src="assets/circle_ellipse.jpg" alt="">
-        <img class="position-absolute icon-7" src="assets/plus_ellipse.jpg" alt="">
+        <section class="hero mb-4 pb-4 icones_flutuando" id="hero-container"></section>
 
-        <!-- Hero conteúdo -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-12 col-sm-12">
-                    <div class="div_redonda mb-3">
-                        <p class="m-0 texto_digital_company"> #1 Digital company in the town!</p>
-                    </div>
-                    <h1 class="mb-3">Amet sed cursus eu tellus eget</h1>
-                    <p class="mb-3">Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
-                    </p>
+        <div class="retangulo_azul"></div>
 
-                    <div class="d-flex align-items-center gap-10">
-                    <button class="btn connect_us">connect with us</button>
-                    <a href="#" class="text-dark pl-4 botao_browse_our_works">Browse our works</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-end">
-                    <figue class="hero_imagem">
-                        <img src="assets/hero_image.jpg" alt="hero imagem">
-                    </figue>
-    </section>
+        <section class="services" id="services-container"></section>
 
-    <!-- Retangulo azul -->
-    <div class="retangulo_azul"></div>
+        <section class="empresas" id="empresas-container"></section>
 
-        <!-- Seção dos cards -->
-    <section class="services padding-50">
-        <div class="container">
-            <div class="mb-5">
-                <h2 class="text-center sec_titulo">Services that lead the way to better business</h2>
-                <p class="text-center sec_subtitulo">Faucibus fringilla sed integer cursus tellus et, quis ultricies. Aliquam, faucibus arcu in laoreet ac elementum in eget. Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
-                </p>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
-                <div class="card"> </div>
-            </div>
-        </div>
-    </section>
+        <section class="processos" id="processos-container"></section>
 
-    <!-- Seção dos icones de empresas -->
-    <section class="empresas padding-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mb-5">
-                        <h2 class="text-center sec_titulo">Companies we work with</h2>
-                        <p class="text-center sec_subtitulo">Dictum tortor, sed scelerisque mattis malesuada. Urna sed magna a sed nulla egestas bibendum eget. Consectetur urna varius dolor, fermentum turpis. Sit malesuada id tortor viverra gravida cras. In quis.
-                        </p>
-                    </div>
-                    <div class="empresas_lista"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="works" id="works-container"></section>
 
-
-    <!-- Lista de processos -->
-    <section class="processos padding-50">
-        <div class="container">
-            <div class="row"> 
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <figure class="imagem">
-                        <img src="assets/process.jpg" alt="process">
-                    </figure>
-                </div>
-    
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <div class="mb-4">
-                        <h2 class="sec_titulo">Our Process</h2>
-                        <p class="sec_subtitulo">
-                            Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada. Tristique est tellus non maecenas in egestas aliquam. 
-                            Eget dolor pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
-                        </p>
-                    </div>
-                    <ul class="lista_processos">
-                        <li class="lista_item">
-                            <img class="lista_processos" src="assets/fea_process_1.jpg" alt>
-                            <p>
-                            <strong>Discovery</strong>
-                             Velit lacus ipsum, urna, pretium lacinia. 
-                             Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
-                            </p>
-                        </li>
-                        <li class="lista_item">
-                            <img class="lista_processos" src="assets/fea_process_2.jpg" alt>
-                            <p>
-                            <strong>Plan</strong>
-                            Tellus, lacus, sem adipiscing ac sem amet. Vitae proin volutpat cras tempus vitae. Ipsum consectetur quis diam 
-                            hendrerit pharetra amet scelerisque. Elementum risus aliquam quam etiam. Eget eu risus dui lacus, orci. Cras ultricies posuere adipiscing faucibu.                            
-                            </p>
-                        </li>
-                        <li>
-                            <img class="lista_processos" src="assets/fea_process_4.jpg" alt>
-                            <p>
-                            <strong>Execute</strong>
-                            Congue ridiculus at tortor mattis turpis bibendum at pulvinar viverra. 
-                            Ultrices morbi amet quam nisl risus libero, sodales nibh faucibus. Sed gravida elementum auctor fermentum id sem                            
-                            </p>
-                        </li>
-                        <li>
-                            <img class="lista_processos" src="assets/fea_process_5.jpg" alt>
-                            <p>
-                            <strong>Deliver</strong>
-                            Pellentesque id pharetra, semper neque purus. Ante lacinia in ut sagittis sed sapien. In facilisi in a diam. 
-                            Pellentesque arcu faucibus vel ornare pulvinar sollicitudin eu. Tempus nisi malesuada convallis velit viverra odio. Senectus consectetur fames in sed velit, ornare. Sed arcu.                          
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Works animação do zoom da imagem -->
-    <section class="works padding-50">
-        <div class="container">
-            <div class="mb-5">
-                <h2 class="sec_titulo text-center"> See Our Work</h2>
-                <p class="sec_subtitulo text-center">
-                    Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. 
-                    Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.
-                </p>
-            </div>
-            <div class="row" id="see_our_work">  
-            </div>
-            <div class="botao_see_all">
-            <button class="btn mx-auto mt-4">See all projects</button>
-            </div>
-        </div>
-    </section>
-
-        <!-- Banner cinza -->
-    <section class="banner padding-50">
-        <div class="container">
-            <div class="row align-items-center"> 
-                <div class="col-lg-5 col-md-12 col-sm-12"> 
-                    <h2 class="sec_titulo">We’re a lean creative agency that 
-                        uses design and code to solve problems.
-                    </h2>
-                </div>
-                <div class="linha"></div>
-
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="sec_subtitulo m-0">Semper bibendum nisl, fermentum mi convallis. Sed vitae tincidunt nunc, 
-                    aliquam orci. Porttitor faucibus morbi sed senectus justo, adipiscing augue. Est, in in pretium at libero morbi. 
-                    Euismod viverra arcu nisi eu sit. Praesent diam non imperdiet imperdiet potenti tristique et. Amet nec.</p>
-            </div>
-        </div>
-    </section>
+        <section class="banner" id="banner-container"></section>
 
         <!-- Imagem pessoas conversando about -->
-    <section class="about padding-50">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <figure class="about_image">
-                        <img src="assets/about.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <h2 class="sec_titulo">
-                        Designed and built by an astonishing creative team.
-                    </h2>
-                    <p class="sec_subtitulo">
-                        Et eleifend consectetur tellus consectetur nibh non urna lobortis. 
-                        Quis sapien enim posuere mollis risus. Nec dictumst ullamcorper et leo. 
-                        Varius praesent tinc.
-                    </p>
-                    <button class="btn">About us</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="about" id="about-container"></section>
 
         <!-- Carrossel que sugou minha sanidade mental -->
-    <section class="clientes padding-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <figure class="clientes_imagem">
-                        <img src="assets/clients_reviews.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 position-relative overflow-hidden">
-                    <h2 class="sec_titulo">Meet Client Satisfaction after working with us</h2>
-                    <p class="text-dark">
-                        Doesn’t feel like an agency
-                    </p>
-                    <div class="d-flex gap-10 mb-3" id="estrelas">
-                    </div>
+        <section class="clientes" id="clientes-container"></section>
 
-                        <!-- Carrossel -->
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <p class="texto_do_carrossel">
-                                    Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium
-                                    lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet,
-                                    turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.
-                                </p>
-                                <div class="perfil">
-                                    <img src="assets/clt-1.jpg" alt="Gwen Stacy" class="perfil-foto">
-                                    <div>
-                                        <p class="m-0">Gwen Stacy</p>
-                                        <p class="m-0">Cloudexter</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <p class="texto_do_carrossel">
-                                    Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium
-                                    lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet,
-                                    turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.
-                                </p>
-                                <div class="perfil">
-                                    <img class="perfil-foto" src="assets/clt-1.jpg" alt="Gwen Stacy" class="profile-pic">
-                                    <div>
-                                        <p class="m-0">Gwen Stacy</p>
-                                        <p class="m-0">Cloudexter</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                            <!-- Botão de navegação do carrrossel -->
-                        <div class="swiper swiper-button">
-                            <button class="btn btn-prev"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button class="btn btn-next"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-    
-                        <div class="swiper-pagination"></div>
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-            
-    <section class="perguntas_frequentes padding-50">
-        <div class="container">
-            <div class="mb-3">
-                <h2 class="sec_titulo text-center">Frequently Asked Questions</h2>
-                <p class="sec_subtitulo text-center">
-                    At et turpis ridiculus tristique fermentum. Morbi nunc interdum adipiscing elit, placerat enim.
-                    Odio consectetur proin eget id ut. Dolor aliquam egestas viverra aliquam. Vitae nisl, in sit scelerisque eget sed.
-                    Nibh amet rhoncus ultrices.
-                </p>
-            </div>
-            
-                <!-- Acordião -->
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          <span class="accordion-title"> Why is the moon sometimes out during the day? </span> 
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span class="accordion-title"> Why is the sky blue? </span>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <span class="accordion-title"> Will we ever discover aliens? </span>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <span class="accordion-title"> How much does the Earth weigh? </span>
-                        </button>
-                    </h2>
-    
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <span class="accordion-title">   How do airplanes stay up? </span>
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="perguntas_frequentes" id="perguntas-container"></section>
 
-            </main>
-                <!-- Footer -->
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-center mb-4">
-                                <a href="#" class="brand-logo">Ace <span class="fw-bold">Studio</span></a>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-center mb-4">
-                                <div class="links_paginas mx-auto">
-                                    <a href="#" class="nav-item text-white pr-2">Home</a>
-                                    <a href="#" class="nav-item text-white pr-2">Services</a>
-                                    <a href="#" class="nav-item text-white pr-2">Contact Us</a>
-                                    <a href="#" class="nav-item text-white pr-2">Careers</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-center mb-4">
-                                <div class="social_links d-flex align-items-center justify-content-center">
-                                    <a href="#" class="text-white social_item"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="text-white social_item"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#" class="text-white social_item"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#" class="text-white social_item"><i class="fa-brands fa-tiktok"></i></a>
-                                </div>
-                            </div>
-                            <div class="copyright"> Copyright © 2024 Designed and Developed by AchrafThemes.
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                          
-                
-                
+    </main>
 
-        <script src="js/preloader.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/sidebar.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper('.swiper', {
-                spaceBetween: 10,
-                slidesPerView: 1,
-        navigation: {
-            nextEl: ".btn-next", // Botão de próximo
-            prevEl: ".btn-prev", // Botão de anterior
-        },
-            });
-        </script>
-                
+    <!-- Rodapé -->
+    <footer class="footer-classe" id="footer-container"></footer>
 
+    <!-- Scripts internos -->
+    <script src="components/preloader/preloader.js"></script>
+    <script src="components/clientes/estrelas.js"></script>
+    <script src="components/service/service.js"></script>
+    <script src="components/empresas/empresas.js"></script>
+    <script src="components/work/work.js"></script>
+    <script src="javascript/componentsload.js"></script>
+    <script src="./components/sidebar/sidebar.js" defer></script>
+    <script src="./components/clientes/carrossel.js" defer></script>
 
+    <!-- Bibliotecas externas -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

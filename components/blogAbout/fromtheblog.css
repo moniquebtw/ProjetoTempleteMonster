@@ -1,0 +1,72 @@
+.from_the_blog {
+    background-color: #f8f6f6;
+    padding: 50px 0;
+  }
+  
+  .card_blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .novoBlog {
+    background-color: #ffffffd2;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+  }
+  
+  
+  .novoBlog img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .novoBlog h4 {
+    font-size: 1.1rem;
+    color: #000;
+    margin: 16px 12px 8px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .novoBlog span {
+    color: #797979;
+    margin: 0 12px 16px;
+    font-size: 0.85rem;
+    display: block;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .card_blog {
+      padding: 0 10px;
+    }
+  
+    .novoBlog h4,
+    .novoBlog span {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .from_the_blog {
+      padding: 30px 0;
+    }
+  
+    .novoBlog h4 {
+      font-size: 1rem;
+    }
+  
+    .novoBlog span {
+      font-size: 0.75rem;
+    }
+  }
+  

@@ -1,0 +1,170 @@
+.navbar {
+    padding: 0;
+    margin: 0;
+    background-color: #fff !important;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+nav .container ul li a{
+    position: relative;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center !important;
+    text-decoration: none;
+
+}
+
+.itens-navbar-nome {
+    color: #0a0a0a;
+    padding: 0px 0px 0px 15px !important;
+    position: relative;
+}
+
+.itens-navbar-nome:hover {
+    color: #000;
+}
+
+nav .container .logo-navbar {
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+}
+
+nav .container .logo-navbar span {
+    color: #ffe600;
+    margin: 0;
+    padding: 0;
+}
+
+.itens-navbar-nome {
+    color: #0a0a0a;
+    padding: 0px 0px 0px 15px !important;
+    position: relative;
+}
+
+nav .container ul li a::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -5px;
+    width: 0%;
+    height: 1px;
+    background-color: #6854fc;
+    transition: all 0.8s cubic-bezier(0.67, 0.17, 0, 1.63);
+}
+
+nav .container ul li a:hover::before {
+    width: 75%;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.itens-navbar-dropdown:hover .dropdown-menu {
+    display: block;
+    
+}
+
+.itens-navbar-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 10px #cdcdcd;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+    padding: 20px;
+    width: 150px;
+    background-color: #fff !important;
+    top: 30px !important;
+    left: 0px;
+    position: absolute;
+   
+}
+
+.dropdown-menu a {
+    font-size: 16px !important;
+    line-height: 40px;
+    text-decoration: none;
+    color: #141414;
+}
+
+
+.btn {
+    background-color: #6854fc;
+    border: 1px solid #6854fc;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px ;
+    padding: 6px 12px;
+    font-weight: 600 ;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #6854fc;
+    border: 1px solid #6854fc;
+}
+
+#todos-itens-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar_icon {
+    padding: 0 0 0 16px !important;
+    cursor: pointer;
+}
+
+.fa-solid {
+    font-weight: 900 !important;
+}
+
+nav .container i {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .botao-icon {
+        padding-top: 20px;
+    }
+
+    nav .container i {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .botao-icon {
+        margin-top: -40px;
+    }
+    .logo-navbar {
+        padding-left: 10px;
+    }
+}
