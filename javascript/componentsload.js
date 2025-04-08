@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (typeof criandoShortcutLinks === 'function') criandoShortcutLinks();
 
 
-    // Preloader
     const elapsed = Date.now() - startTime;
     const delay = Math.max(0, 1000 - elapsed);
 

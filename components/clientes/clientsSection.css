@@ -34,8 +34,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px;
-    cursor: pointer; /* Garante que o botão fique clicável */
-    transition: background-color 0.3s ease; /* Adiciona efeito suave no hover */
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
 }
 
 .swiper .btn:hover {

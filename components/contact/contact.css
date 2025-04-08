@@ -21,7 +21,7 @@
 
 
 .contact_section {
-    min-height: 100vh; /* altura total da tela */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +136,7 @@
     display: grid;
     place-content: center;
     cursor: pointer;
-    appearance: none; /* remove o estilo nativo do checkbox */
+    appearance: none; 
     transition: all 0.2s ease-in-out;
 }
 
@@ -178,6 +178,10 @@
     .card_contato {
         flex-direction: column;
     }
+    .informacao_contato ul li {
+        font-size: 15px;
+    }
+
 }
 
 @media (min-width: 768px) {

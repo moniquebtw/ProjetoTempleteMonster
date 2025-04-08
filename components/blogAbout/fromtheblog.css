@@ -70,3 +70,28 @@
     }
   }
   
+  @media (max-width: 1200px) {
+    .card_blog {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_blog {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card_blog {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card_blog {
+        gap: 10px;
+    }
+}
