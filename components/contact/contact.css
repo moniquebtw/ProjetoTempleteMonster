@@ -189,4 +189,9 @@
         flex: 50%;
         max-width: 90%;
     }
+
+    .informacao_contato ul li {
+        font-size: 15px;
+    }
+
 }
