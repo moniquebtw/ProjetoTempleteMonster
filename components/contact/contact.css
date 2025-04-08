@@ -126,13 +126,28 @@
 .formulario_contato input[type=checkbox] {
     margin: 0;
     font: inherit;
-    color: #ced4da;
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid rgb(8, 8, 8);
-    border-radius: 0.15em;
+    color: #212529;
+    background-color: #fff;
+    border: 2px solid #ced4da;
+    border-color:  black;
+    border-radius: 0.2rem;
     display: grid;
     place-content: center;
+    cursor: pointer;
+    appearance: none; /* remove o estilo nativo do checkbox */
+    transition: all 0.2s ease-in-out;
+}
+
+.formulario_contato input[type=checkbox]:checked {
+    border-color: black;
+}
+
+.formulario_contato input[type=checkbox]:checked::after {
+    content: "✓";
+    font-size: 0.75em;
+    color: black;
 }
 
 .contact_section textarea {
