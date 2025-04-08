@@ -190,8 +190,8 @@
         max-width: 90%;
     }
 
-    .informacao_contato ul li {
-        font-size: 15px;
+    .informacao_contato ul li p {
+        font-size: 10px;
     }
 
 }
